@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poppins:wght@200;300;400&family=Quicksand:wght@500&family=Raleway:wght@300;400&family=Righteous&family=Source+Sans+Pro&display=swap');
+
+html, body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+  display: none;
+  width: 0;
+}
+
+*{
+  transition: all 0.2s;
+}
+body{
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  color: white;
+  list-style-type: none;
+  font-family: source sans pro;
+}
+
+.App {
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  padding: 0rem 8rem;
+  height: 100vh;
+}
+.mobile_tab{
+  display: none;
+}
+.desktop_tab{
+  display: flex;
+}
+.more{
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+
+}
+.sticky_button{
+  display: none;
+}
+.home, .messages, .more, .profile, .notifications, .communities, .bookmarks, .ForYou, .Following, .Search{
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-width: 100%;
+}
+
+
+@media (min-width: 500px) and (max-width: 768px){
+  .App{
+      padding: 0rem;
+  }
+  .trending{
+    display: none;
+  }
+  .home, .messages, .more, .profile, .notifications, .communities, .bookmarks{
+    border-right: none;
+    width: 100%;
+  }
+ 
+}
+/* @media (min-width: 500px) and (max-width: 1000px){
+  .trending{
+    display: none;
+  }
+  .home, .messages, .explore, .more, .profile, .notifications, .communities, .bookmarks{
+    width: 100%;
+    border-right: none;
+  }
+  .explore_header{
+    width: 88%;
+  }
+} */
+@media (min-width: 320px) and (max-width: 499px){
+  .messages, .more, .profile, .notifications, .communities, .bookmarks, .Following, .ForYou{
+    border: none;
+    width: 100%;
+    margin-top: 0rem;
+  }
+  .home{
+    position: relative;
+    top: 80px;
+    border: none;
+    width: 100%;
+    margin-top: 0rem;
+  }
+  .explore{
+    margin-top: 6rem;
+    border: none;
+    width: 100%;
+    overflow: auto;
+  }
+  .App{
+    padding: 1rem 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Navbar_head{
+    left: 0px;
+    right: 0px;
+    top: 0;
+  }
+  .sticky_links_{
+    display: none;
+  }
+  .Search{
+    margin-top: -6rem;
+    border: none;
+    width: 100%;
+    overflow: auto;
+
+  }
+  .Trends{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .nav-input{
+    width: 85%;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  .explore_header{
+    width: 91%;
+    padding-left: 0rem;
+  }
+  
+}
+@media (min-width: 769px) and (max-width: 997px){
+  .App{
+    padding: 0rem 1rem;
+  }
+}
+
+
+
+

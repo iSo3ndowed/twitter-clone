@@ -1,0 +1,23 @@
+::-webkit-scrollbar{
+    display: none;
+  }
+  
+.trending{
+    overflow: scroll;
+    width: 20%;
+    border: none;
+    /* background-color: #1A8CD8; */
+}
+.Trends_{
+  width: auto;
+  padding-left: 0rem;
+  padding-right: 0rem;
+  padding-top: 0rem;
+  background-color: #16181C;
+  padding: 0px 10px;
+  border-radius: 5px;
+}
+.Trend_list p{
+  color: #16181C;
+}
+
